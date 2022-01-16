@@ -2,179 +2,66 @@
 <html>
     <head>
 
+        <!-- external style sheet -->
+        <link rel="stylesheet" href="styles.css">
+
         <!-- doc title -->
         <title>MexiPizza</title>
 
-        <!-- this is your internal style sheet -->
-        <style> 
-
-
-            html, body {  
-                margin:0; 
-                padding:0; 
-            }
-
-            body { 
-                background-color: #FFFFFF; /* white */
-                color: black;  /* color of font */
-                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; /* no tail font is more readable for small font */
-                font-size:16px;
-            }
-
-
-
-            #titleNav { /* titleNav is fixed, always at the top */
-
-                /*Responsive design*/
-                display: flex;
-                flex-direction: column;
-
-                /* position fixed removes the element from the normal flow, placing it where you specify with top/bottom, left/right */
-                position:fixed; 
-                top:0px;
-                left:0px;
-                z-index: 1;     /* To make sure titleNav is on top of content, give it a higher z-index than content 
-                                (content would have default value of zero). */
-                width: 100%;    
-
-                background-color:#0B7226;
-                padding-top: 10px;
-                padding-bottom: 10px; 
-                /* height: 86px; /* NEW */
-                color: white;
-                font-family: serif; 
-                font-weight: bold;
-                font-size:25px;
-
-
-
-                #pageTitle { /* no change */
-
-                    display: flex;
-                    flex-direction: column;
-
-                    padding-right: 2px;
-                    padding:12px;
-                    padding-bottom: 20px;
-                    font-size:48px;
-                    letter-spacing: 1.5px; /* spaces out letters a bit */
-                }
-
-                #nav { /* fix the nav bar */
-                    position: fixed; 
-                    top: 0px;
-                    right: 0px;
-                    text-align:right;
-                    font-size:50px;
-                    padding-bottom: 12px;
-
-                    padding-top:50px;
-                }
-
-
-                #nav a {  /* no change */
-                    padding-top: 20px;
-                    text-decoration:none;  /* Do not want links in "nav" to be underlined */
-                    color: #C8C8C8; /* light gray: to provide color for links, you have to style the "a" tag */
-                }
-            }
-
-            #content {  /* Added padding top and bottom to prevent top/bottom content from getting hidden under titleNav/footer */ 
-                margin-top: 7rem;
-                padding:12px;
-                padding-top: 10px; /* prevent the top of the content from getting hidden under the fixed titleNav */
-                padding-bottom: 30px; /* prevent the the bottom of the content from getting hidden under the fixed footer */
-            }
-
-            #footer { /* footer fixed, always at the bottom */
-                position: fixed;
-                bottom: 0px; 
-                left: 0px; 
-                z-index: 1; /* make sure footer is on top of content which would have default z-index value of 0 */
-
-                background-color:#0B7226;
-                color: white; 
-                width:100%;
-                text-align:center;
-                padding:8px;	 	 
-            }
-            
-            .column {
-                flex-direction: column;
-                flex: 50%;
-            }
-            
-            .row{
-                flex-direction: column;
-                text-align: center;
-                display: flex;   
-                padding-bottom: 10px;
-            }
-
-            /*desktop formatting */
-            @media only screen and (min-width: 600px) {
-                .row {
-                    flex-direction: row;
-                    justify-content:space-between;
-                }
-                #content {
-                    margin-top: 4.5rem;
-                }
-
-                #titleNav {
-                    flex-direction: row;
-                    justify-content: space-between;
-                }
-            }/*end @media*/
-
-        </style>
     </head>
+    
     <body>
 
         <div id="titleNav">
 
-            <div id="pageTitle">
-                MexiPizza
-            </div>
+            <div id="pageTitle">MexiPizza</div>
 
             <div id="nav">
+                
                 <a href="index.html">Home</a>
+                
                 &nbsp; <!-- non breaking space used to give more space -->
                 | <!-- vertical bar used as separator -->
                 &nbsp; <!-- non breaking space used to give more space -->
+                
                 <a href="blog.html">Blog</a>
+                
                 &nbsp; <!-- non breaking space used to give more space -->
                 &nbsp; <!-- non breaking space used to give more space -->
+                
             </div>
 
         </div>
 
         <div id="content">
+            
             <h2>Welcome!</h2>
+            
             <!-- description of site -->
             <p>
                 Authentic Mexican and delicious pizza, right here in Delco!
                 This website can be used to find information about the restaurant
                 such as hours, menus, and phone numbers. 
             </p>
+            
             <!-- link -->
             <p>
                 <a href="https://youtu.be/dQw4w9WgXcQ">Click here to view our amazing offers!</a>
             </p>
-            
+
             <!-- web dev experience -->
             <p>
                 I have absolutely no experience in web development or design. However, I have created several applications
                 for Android devices, and I assumed this class would be similar (it is.) I am hoping to develop my web application
                 skills throughout this semester and obtain the elusive title of a Full Stack Developer.
             </p>
-            
+
             <!-- database details -->
             <p>
                 For this project, I plan on using a database implementation where users are customers and the other table is the menu.
                 Here are some of the fields I plan on using in this other table:
             </p>
-            
+
             <!-- UL of database fields -->
             <ul>
                 <li>URL pointing to an image of the food </li>
@@ -182,31 +69,32 @@
                 <li>Date ordered</li>
                 <li>Description of food experience</li>
                 <li>1-5 star review</li>
-             
+
             </ul>
-            
+
             <!-- what did I find hard about this homework -->
             <p>
                 This homework has really not been too difficult for me thankfully. Having experience with Android development has made
                 this transition relatively smooth. At first, I was a little intimidated because there were just a lot of concepts thrown
                 at us from CSS, but as soon as I put my head down and started focusing on learning it, it was easy. 
             </p>
-<!--
-            <div id="mexFlagImg">
-                <img src="pics/mexiFlag.png" >
-            </div>
--->            
+            
             <div class="row">
+                
                 <div class="column"><img src="pics/mexiFlag.png" alt="MexiFlag"
                                          style="width:50%;text-align:center;border-radius:10px;">
                 </div>
+                
                 <div class="column"><img src="pics/Burrito.JPG" alt="Burrito"
                                          style="width:50%;text-align:center;border-radius:10px;"></div>
             </div>
-               
+
         </div> <!-- content. [[Keep track of nesting]] -->
+        
         <div id="footer">
             Patrick Doyle
         </div>
+        
     </body>
+    
 </html>
