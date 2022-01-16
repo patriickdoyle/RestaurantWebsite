@@ -34,41 +34,20 @@ body {
     font-family: serif; 
     font-weight: bold;
     font-size:25px;
-    
-    text-decoration:none;
-
-
 
     #pageTitle { /* no change */
 
-        display: flex;
-        flex-direction: column;
-
         padding-right: 2px;
-        padding:12px;
-        padding-bottom: 20px;
-        font-size:48px;
         letter-spacing: 1.5px; /* spaces out letters a bit */
     }
 
-    #nav { /* fix the nav bar */
-        position: fixed; 
-        top: 0px;
+    #nav { /* fix the nav bar */ 
         right: 0px;
         text-align:right;
-        font-size:50px;
-        padding-bottom: 12px;
-        
-        text-decoration:none;
-
-        padding-top:50px;
     }
 
 
-    #nav a {  /* no change */
-        padding-top: 20px;
-        text-decoration:none;  /* Do not want links in "nav" to be underlined */
-        color: #C8C8C8; /* light gray: to provide color for links, you have to style the "a" tag */
+    #nav a {  /* no change */  
     }
 }
 
