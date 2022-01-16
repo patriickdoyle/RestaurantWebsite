@@ -98,9 +98,25 @@
                 text-align:center;
                 padding:8px;	 	 
             }
+            
+            .column {
+                flex-direction: column;
+                flex: 50%;
+            }
+            
+            .row{
+                flex-direction: column;
+                text-align: center;
+                display: flex;   
+                padding-bottom: 10px;
+            }
 
             /*desktop formatting */
             @media only screen and (min-width: 600px) {
+                .row {
+                    flex-direction: row;
+                    justify-content:space-between;
+                }
                 #content {
                     margin-top: 4.5rem;
                 }
@@ -175,11 +191,19 @@
                 this transition relatively smooth. At first, I was a little intimidated because there were just a lot of concepts thrown
                 at us from CSS, but as soon as I put my head down and started focusing on learning it, it was easy. 
             </p>
-
-            <p style="text-align:center;">
-                <img src="pics/mexiFlag.png" style="width:50%; border-radius:10px;">
-            </p>
-
+<!--
+            <div id="mexFlagImg">
+                <img src="pics/mexiFlag.png" >
+            </div>
+-->            
+            <div class="row">
+                <div class="column"><img src="pics/mexiFlag.png" alt="MexiFlag"
+                                         style="width:50%;text-align:center;border-radius:10px;">
+                </div>
+                <div class="column"><img src="pics/Burrito.JPG" alt="Burrito"
+                                         style="width:50%;text-align:center;border-radius:10px;"></div>
+            </div>
+               
         </div> <!-- content. [[Keep track of nesting]] -->
         <div id="footer">
             Patrick Doyle
