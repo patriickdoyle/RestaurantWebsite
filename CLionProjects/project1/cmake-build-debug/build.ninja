@@ -61,6 +61,12 @@ build CMakeFiles/projact1.dir/getProc.c.obj: C_COMPILER__projact1_Debug C$:/User
   OBJECT_DIR = CMakeFiles\projact1.dir
   OBJECT_FILE_DIR = CMakeFiles\projact1.dir
 
+build CMakeFiles/projact1.dir/getStatFields.c.obj: C_COMPILER__projact1_Debug C$:/Users/Patrick$ Doyle/CLionProjects/project1/getStatFields.c || cmake_object_order_depends_target_projact1
+  DEP_FILE = CMakeFiles\projact1.dir\getStatFields.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\projact1.dir
+  OBJECT_FILE_DIR = CMakeFiles\projact1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target projact1
@@ -69,7 +75,7 @@ build CMakeFiles/projact1.dir/getProc.c.obj: C_COMPILER__projact1_Debug C$:/User
 #############################################
 # Link the executable projact1.exe
 
-build projact1.exe: C_EXECUTABLE_LINKER__projact1_Debug CMakeFiles/projact1.dir/tups.c.obj CMakeFiles/projact1.dir/getProc.c.obj
+build projact1.exe: C_EXECUTABLE_LINKER__projact1_Debug CMakeFiles/projact1.dir/tups.c.obj CMakeFiles/projact1.dir/getProc.c.obj CMakeFiles/projact1.dir/getStatFields.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projact1.dir

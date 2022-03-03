@@ -1,3 +1,5 @@
+CFLAGS=-I.
+
 output: tups.o getProc.o
 	gcc tups.o getProc.o -o output -Wall -Werror
 

@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <string.h>
 #include <dirent.h>
+#include <ctype.h>
 
 void getProc(bool givenPID,bool stateInfo,bool userTime,
              bool sysTime,bool displayVM,bool displayCmd,char *pid);

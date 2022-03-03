@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
             exit(1);
         }//end if
 
+        printf("\n");
         //-p <pid>: display info for proc w/ given pid
         if (argv[i][1] == 'p') {
             givenPID = true;
