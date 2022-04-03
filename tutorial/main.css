@@ -1,0 +1,103 @@
+
+
+html, body {  
+    margin:0; 
+    padding:0; 
+}
+
+body { 
+    background-color: #FFFFFF; /* white */
+    color: black;  /* color of font */
+    font-family: Georgia, serif; 
+    font-size:16px;
+}
+
+#titleNav { /* titleNav is fixed, always at the top */
+    
+    padding-left: 2px;
+
+    /*Responsive design*/
+    display: flex;
+    flex-direction: column;
+
+    /* position fixed removes the element from the normal flow, placing it where you specify with top/bottom, left/right */
+    position:fixed; 
+    top:0px;
+    left:0px;
+    z-index: 1;     /* To make sure titleNav is on top of content, give it a higher z-index than content 
+                    (content would have default value of zero). */
+    width: 100%;    
+
+    background-color:#0B7226; /*green*/
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    /* height: 86px; /* NEW */
+    color: white;
+    font-family: Georgia, serif; 
+    font-weight: bold;
+    font-size:25px;
+
+    #pageTitle { /* no change */
+        padding-right: 2px;
+        letter-spacing: 1.5px; /* spaces out letters a bit */
+    }
+
+    #nav { /* fix the nav bar */ 
+        right: 0px;
+        text-align:right;
+    }
+
+    #nav a {
+        
+    }
+}
+
+#content {  /* Added padding top and bottom to prevent top/bottom content from getting hidden under titleNav/footer */ 
+    margin-top: 7rem;
+    padding:12px;
+    padding-top: 10px; /* prevent the top of the content from getting hidden under the fixed titleNav */
+    padding-bottom: 30px;
+    background-color: white;
+    /* prevent the the bottom of the content from getting hidden under the fixed footer */
+}
+
+#footer { /* footer fixed, always at the bottom */
+    position: fixed;
+    bottom: 0px; 
+    left: 0px; 
+    z-index: 1; /* make sure footer is on top of content which would have default z-index value of 0 */
+
+    background-color:#0B7226;
+    color: white; 
+    width:100%;
+    text-align:center;
+    padding:8px;	 	 
+}
+
+.column {
+    flex-direction: column;
+    flex: 50%;
+}
+
+.row{
+    flex-direction: column;
+    text-align: center;
+    display: flex;   
+    padding-bottom: 10px;
+}
+
+/*desktop formatting */
+@media only screen and (min-width: 600px) {
+    .row {
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    #content {
+        margin-top: 4.5rem;
+    }
+
+    #titleNav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}/*end @media*/

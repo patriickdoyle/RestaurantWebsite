@@ -1,0 +1,30 @@
+.emp {  /* applies to any dom element that's classed "obj" */
+    background-color: #AACCDD;
+    margin: 1rem;
+    text-align: center;
+    border-radius:0.5rem;
+}
+
+.emp h3 { /* applies to any "h2" tag that's in an "obj" dom element */
+    background-color: white;
+    padding: 0.5rem;
+    margin:0rem;
+    margin-bottom:1rem;
+    width: 95%;
+    border-radius:0.5rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    
+    emp h4 {
+        
+    }
+    
+}
+
+.emp img { /* applies to any "img" tag that's in an "obj" dom element */
+    width:75%;
+    border-radius:0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.2rem rgba(0,0,0,0.8);
+    /* box shadow: left offset, right offset, size of blur, color */
+}
+
